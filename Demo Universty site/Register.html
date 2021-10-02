@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+<title>Register</title>
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" >
+<script>
+function h(){
+var major= document.getElementById("major").value;
+var fee;
+if (major == "Computer science")
+	fee = 15000;
+else if(major == "Business and administration")
+	fee = 30000;
+else
+	fee = 50000;
+window.alert("You have succesfuly registerd to our University\nyour major is : "+major
++"\nYour tutution fees : "+fee+"$");}
+</script>
+</head>
+<body>
+	<!-- Top bar -->
+	<nav class="navbar sticky-top navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Innovation University</a>
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item ">
+        <a class="nav-link" href="Home.html">Home </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Home.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Home.html">Contact us</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+	
+	<form onsubmit="h()" action="home.html">
+	<table style="margin-top:2em;margin-left:2em;">
+	<tr>
+	<td><label>First Name :</label></td><td><input type="text" required>
+	</td></tr>	
+	<td><label>Last Name :</label></td><td><input type="text" required>
+	</td></tr>
+	<td><label>Gender :</label></td><td><input type="radio" name="gender" checked>Male<input name="gender" type="radio">Female
+	</td></tr>
+	<td><label>Date of birth :</label></td><td><input type="date">
+	</td></tr>
+	<td><label>Address :</label></td><td><input type="text">
+	</td></tr>
+	<td><label>E-mail :</label></td><td><input type="email" placeholder="Mail@domain.com">
+	</td></tr>
+	<td><label>Mobile :</label></td><td><input type="tel" placeholder="01#########" pattern="01#########">
+	</td></tr>
+	<td><label>Faculty :</label></td><td><select id="major">
+								<option value="Computer science">Computer science</option>
+								<option value="Business and administration">Business and administration</option>
+								<option value="Engineering">Engineering</option></select>
+	</td></tr>
+	<td><td><label><input style="text-align:center;margin-top:5px;font-size:20px" class="btn btn-success" type="submit" value="Register"></label></td>
+	</td></tr>
+	</form>
+	</table>
+</body>
+</html>
+	

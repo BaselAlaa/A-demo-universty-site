@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Course Register</title>
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" >
+<script>
+function av(){
+window.alert("You succesfuly registered");}
+function nav(){
+window.alert("Sorry no available places");}
+</script>
+</head>
+<body>
+	<!-- Top bar -->
+<nav class="navbar sticky-top navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="Home.html">Innovation University</a>
+ <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item ">
+        <a class="nav-link" href="Home.html">Home </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Home.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Home.html">Contact us</a>
+      </li>
+    </ul>
+  </div>  </nav>
+
+<table class="table table-striped">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Enroll Courses</th>
+	  <th scope="col">	</th>
+      </tr></thead>
+   <tr>
+   <tbody>
+    <tr>
+      <th scope="row">Scientific Thinking</th>
+      <td><button type="button" class="btn btn-success" id="Available" onclick="av()">Available</td>
+      
+    </tr>
+    <tr>
+      <th scope="row">PhotoShop (For Your Face ;D)</th>
+      <td><button type="button" class="btn btn-success" id="Available" onclick="av()">Available</td>
+     
+    </tr>
+    <tr>
+      <th scope="row">Human Rights</th>
+      <td><button type="button" class="btn btn-danger" id="nAvailable" onclick="nav()">Not Available</td>
+      
+    </tr>
+	</tr>
+    <tr>
+      <th scope="row">Communication and presentation MAD SKILLZ</th>
+      <td><button type="button" class="btn btn-danger" id="nAvailable" onclick="nav()">Not Available</td>
+      
+    </tr>
+	</tr>
+    <tr>
+      <th scope="row">Internet Memes</th>
+      <td><button type="button" class="btn btn-danger" id="nAvailable" onclick="nav()">Not Available</td>
+      
+    </tr>
+  </tbody>
+</table>
+
+
+</body>
+<script src="bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Doctor</title>
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" >
+<script>
+
+</script>
+</head>
+<body>
+	<!-- Top bar -->
+<nav class="navbar sticky-top navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="Home.html">Innovation University</a>
+ <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item ">
+        <a class="nav-link" href="Home.html">Home </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Home.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Home.html">Contact us</a>
+      </li>
+    </ul>
+  </div>  </nav>
+  
+  <table class="table table-striped" id="myTable">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Student Courses</th>
+	  <th scope="col">	</th>
+      </tr></thead>
+   <tr>
+   <tbody>
+    <tr>
+      <th scope="row">Computer Programming</th>
+      <td>11:00 - 1:00 / Sunday</td>
+ 
+    </tr>
+    <tr>
+      <th scope="row">English</th>
+      <td>9:00 - 11:00 / Sunday</td>
+     
+    </tr>
+    <tr>
+      <th scope="row">Physics</th>
+      <td>1:00 - 3:00 / Monday</td>
+      
+    </tr>
+	</tr>
+    <tr>
+      <th scope="row">Math</th>
+      <td>3:00 - 5:00 / Wednesday</td>
+      
+    </tr>
+	</tr>
+	<tr>
+      <th scope="row">Internet Technology</th>
+      <td>10:00 - 12:00 / Thursday</td>
+    </tr>
+  </tbody>
+</table>
+<table class="table table-striped">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Add Courses</th>
+	  <th scope="col">	</th>
+      </tr></thead>
+   <tr>
+   <tbody>
+    <tr>
+      <th scope="row">Course Name :</th>
+      <td><input type="text" id="name"></td>
+      
+    </tr>
+    <tr>
+      <th scope="row">Course time:</th>
+      <td>From: <input type="time" id="from"> To: <input type="time" id="to"></td>
+     
+    </tr>
+    <tr>
+      <th scope="row">Day :</th>
+      <td><select id="sel">
+	  <option>Saturday
+	  <option>Sunday
+	  <option>Monday
+	  <option>Tuesday
+	  <option>Wednesday
+	  <option>Thursday</select></td>
+      
+    </tr> 
+	</tr>
+    <tr>
+      <th scope="row"></th>
+      <td><button type="button" class="btn btn-danger" id="nAvailable" onclick="nav()">Submit</td>
+      
+    </tr>
+	</tr>
+    
+  </tbody>
+</table>
+ </body>
+ <script>
+ function nav(){
+ var name=document.getElementById("name").value;
+ var from=document.getElementById("from").value;
+ var to=document.getElementById("to").value;
+ var day=document.getElementById("sel").value;
+  var table = document.getElementById("myTable");
+    var row = table.insertRow(1);
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+    cell1.innerHTML = name;
+    cell2.innerHTML = from+" - "+to+" / "+day;}
+ </script>
+ </html>
